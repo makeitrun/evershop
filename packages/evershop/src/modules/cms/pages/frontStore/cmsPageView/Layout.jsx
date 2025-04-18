@@ -14,7 +14,7 @@ export default function Layout() {
       <div className="footer">
         <div className="page-width grid grid-cols-1 md:grid-cols-2 gap-8 justify-between">
           <div>
-            <div className="card-icons flex justify-center space-x-4 md:justify-start">
+            {/* Hide for now <div className="card-icons flex justify-center space-x-4 md:justify-start">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export default function Layout() {
                   />
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="self-center">
             <div className="copyright text-center md:text-right text-textSubdued">

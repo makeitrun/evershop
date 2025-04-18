@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Icon from '@heroicons/react/outline/UserIcon';
 
 export default function UserIcon({ customer, accountUrl, loginUrl }) {
-  return (
-    <div className="self-center">
-      <a href={customer ? accountUrl : loginUrl}>
-        <Icon width={25} height={25} />
-      </a>
-    </div>
-  );
+  // Hide user icon for now
+  // return (
+  //   <div className="self-center">
+  //     <a href={customer ? accountUrl : loginUrl}>
+  //       <Icon width={25} height={25} />
+  //     </a>
+  //   </div>
+  // );
+  return null;
 }
 
 UserIcon.propTypes = {
