@@ -182,7 +182,7 @@ h6 {
 }
 .header {
   background-color: #6e86b6; // Light Blue
-  padding: 2.5rem;
+  padding: 1.5rem; // Reduced padding to make the header shorter
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 3rem;
   color: #ffffff; // Ensure text is readable
@@ -194,8 +194,8 @@ h6 {
   }
 
   @media only screen and (min-width: 1200px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px; // Adjusted padding for larger screens
+    padding-right: 40px;
   }
 }
 
