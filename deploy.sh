@@ -24,7 +24,7 @@ NEW_BUILD="build_$TIMESTAMP"
 
 # Download source from GitHub archive
 echo "Downloading source from GitHub..."
-wget --header="Authorization: token $TOKEN" -O $NEW_BUILD.tar.gz https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/tarball
+wget --header="Authorization: token $TOKEN" -O $NEW_BUILD.tar.gz https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/tarball/${BRANCH}
 
 
 # Unzip source to new build directory

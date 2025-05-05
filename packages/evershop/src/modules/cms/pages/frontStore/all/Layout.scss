@@ -54,7 +54,7 @@ html {
   }
 }
 body {
-  background-color: #e9ecf1; // Softer white
+  background-color: #f4f7f9;
   color: #3a3a3a;
 }
 p {
@@ -181,16 +181,16 @@ h6 {
   min-height: calc(100vh - 50px);
 }
 .header {
-  background-color: #6e86b6; // Light Blue
+  background-color: #f4f7f9; // Light Blue
   padding: 1.5rem; // Reduced padding to make the header shorter
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ddd;
   margin-bottom: 3rem;
-  color: #ffffff; // Ensure text is readable
+  // color: #ffffff; // Ensure text is readable
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); // Add subtle text shadow for better contrast
   transition: background-color 0.3s ease; // Smooth transition for hover effect
 
   &:hover {
-    background-color: #647aa6; // Slightly darker shade on hover
+    background-color: #dfe4ef; // Slightly darker shade on hover
   }
 
   @media only screen and (min-width: 1200px) {
@@ -212,12 +212,12 @@ h6 {
 }
 
 .footer {
-  background-color: #6e86b6; // Same Light Blue as header
+  background-color: #f4f7f9; // Same Light Blue as header
   margin-top: 9rem;
   padding-top: 1rem;
   padding-block-end: 1rem;
   border-top: 1px solid #ddd;
-  color: #ffffff; // Ensure text is readable
+  // color: #ffffff; // Ensure text is readable
   .card-icons {
     svg {
       height: 4rem;
