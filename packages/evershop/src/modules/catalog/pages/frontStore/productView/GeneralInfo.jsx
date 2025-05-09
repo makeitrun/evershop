@@ -19,24 +19,26 @@ export default function GeneralInfo({ product }) {
           },
           sortOrder: 10,
           id: 'productSingleName'
-        },
-        {
-          component: { default: Price },
-          props: {
-            regular: product.price.regular,
-            special: product.price.special
-          },
-          sortOrder: 10,
-          id: 'productSinglePrice'
-        },
-        {
-          component: { default: Sku },
-          props: {
-            sku: product.sku
-          },
-          sortOrder: 20,
-          id: 'productSingleSku'
         }
+        // disable for now
+        // ,
+        // {
+        //   component: { default: Price },
+        //   props: {
+        //     regular: product.price.regular,
+        //     special: product.price.special
+        //   },
+        //   sortOrder: 10,
+        //   id: 'productSinglePrice'
+        // },
+        // {
+        //   component: { default: Sku },
+        //   props: {
+        //     sku: product.sku
+        //   },
+        //   sortOrder: 20,
+        //   id: 'productSingleSku'
+        // }
       ]}
     />
   );

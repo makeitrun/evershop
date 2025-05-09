@@ -6,8 +6,9 @@ export default function ProductPageLayout() {
     <div className="product-detail">
       <Area id="productPageTop" className="product-page-top" />
       <div className="product-page-middle page-width">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <Area id="productPageMiddleLeft" />
+        {/* <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+          <Area id="productPageMiddleLeft" />  disable for now */}
+        <div className="grid grid-cols-1">
           <Area id="productPageMiddleRight" />
         </div>
       </div>

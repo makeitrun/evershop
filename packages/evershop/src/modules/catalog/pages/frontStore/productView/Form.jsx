@@ -88,53 +88,55 @@ ToastMessage.defaultProps = {
   thumbnail: null
 };
 
-function AddToCart({ stockAvaibility, loading = false, error }) {
-  return (
-    <div className="add-to-cart mt-8">
-      <div style={{ width: '8rem' }}>
-        <Field
-          type="text"
-          value="1"
-          validationRules={['notEmpty']}
-          className="qty"
-          name="qty"
-          placeholder={_('Qty')}
-          formId="productForm"
-        />
-      </div>
-      {error && <div className="text-critical mt-4">{error}</div>}
-      <div className="mt-4">
-        {stockAvaibility === true && (
-          <Button
-            title={_('ADD TO CART')}
-            outline
-            isLoading={loading}
-            onAction={() => {
-              document
-                .getElementById('productForm')
-                .dispatchEvent(
-                  new Event('submit', { cancelable: true, bubbles: true })
-                );
-            }}
-          />
-        )}
-        {stockAvaibility === false && (
-          <Button title={_('SOLD OUT')} onAction={() => {}} />
-        )}
-      </div>
-    </div>
-  );
-}
+// Hide for now
 
-AddToCart.propTypes = {
-  error: PropTypes.string,
-  loading: PropTypes.bool.isRequired,
-  stockAvaibility: PropTypes.bool.isRequired
-};
+// function AddToCart({ stockAvaibility, loading = false, error }) {
+//   return (
+//     <div className="add-to-cart mt-8">
+//       <div style={{ width: '8rem' }}>
+//         <Field
+//           type="text"
+//           value="1"
+//           validationRules={['notEmpty']}
+//           className="qty"
+//           name="qty"
+//           placeholder={_('Qty')}
+//           formId="productForm"
+//         />
+//       </div>
+//       {error && <div className="text-critical mt-4">{error}</div>}
+//       <div className="mt-4">
+//         {stockAvaibility === true && (
+//           <Button
+//             title={_('ADD TO CART')}
+//             outline
+//             isLoading={loading}
+//             onAction={() => {
+//               document
+//                 .getElementById('productForm')
+//                 .dispatchEvent(
+//                   new Event('submit', { cancelable: true, bubbles: true })
+//                 );
+//             }}
+//           />
+//         )}
+//         {stockAvaibility === false && (
+//           <Button title={_('SOLD OUT')} onAction={() => {}} />
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
 
-AddToCart.defaultProps = {
-  error: undefined
-};
+// AddToCart.propTypes = {
+//   error: PropTypes.string,
+//   loading: PropTypes.bool.isRequired,
+//   stockAvaibility: PropTypes.bool.isRequired
+// };
+
+// AddToCart.defaultProps = {
+//   error: undefined
+// };
 
 export default function ProductForm({ product, action }) {
   const [loading, setLoading] = useState(false);
@@ -186,16 +188,16 @@ export default function ProductForm({ product, action }) {
       <Area
         id="productSinglePageForm"
         coreComponents={[
-          {
-            component: { default: AddToCart },
-            props: {
-              stockAvaibility: product.inventory.isInStock,
-              loading,
-              error
-            },
-            sortOrder: 50,
-            id: 'productSingleBuyButton'
-          }
+          // {
+          //   component: { default: AddToCart },
+          //   props: {
+          //     stockAvaibility: product.inventory.isInStock,
+          //     loading,
+          //     error
+          //   },
+          //   sortOrder: 50,
+          //   id: 'productSingleBuyButton'
+          // }
         ]}
       />
     </Form>
